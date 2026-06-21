@@ -35,7 +35,7 @@ const PROJELER = [
 function ProjeKarti({ proje }) {
   return (
     <div
-      className={`bg-[#0a1628] border border-[#00f0ff]/10 p-8 hover:border-[#00f0ff]/40 transition-all group ${proje.buyuk ? 'col-span-2' : ''}`}
+      className={`bg-[#0a1628] border border-[#00f0ff]/10 p-8 hover:border-[#00f0ff]/40 transition-all group ${proje.buyuk ? 'md:col-span-2' : ''}`}
     >
       {/* Üst kısım */}
       <div className="flex items-center justify-between mb-6">

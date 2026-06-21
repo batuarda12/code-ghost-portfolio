@@ -16,7 +16,6 @@ function Home() {
     window.addEventListener('resize', resize);
     resize();
 
-    // 80 tane parçacık oluştur
     for (let i = 0; i < 80; i++) {
       particles.push({
         x: Math.random() * canvas.width,
@@ -53,7 +52,7 @@ function Home() {
 
   return (
     <div className="relative min-h-screen bg-[#040d1a]">
-      {/* Arkaplan grid çizgileri */}
+      {/* Arkaplan grid */}
       <div
         className="fixed inset-0 pointer-events-none"
         style={{
@@ -79,8 +78,8 @@ function Home() {
       />
 
       {/* Ana içerik */}
-      <div className="relative z-10 max-w-[1200px] mx-auto px-10 min-h-screen flex items-center pt-16">
-        <div className="grid grid-cols-2 gap-16 w-full items-center">
+      <div className="relative z-10 max-w-[1200px] mx-auto px-6 md:px-10 min-h-screen flex items-center pt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 w-full items-center">
           {/* SOL KOLON */}
           <div>
             {/* Üst etiket */}
@@ -92,7 +91,7 @@ function Home() {
             </div>
 
             {/* Ana başlık */}
-            <h1 className="text-6xl font-extrabold leading-tight tracking-tight mb-6">
+            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-6">
               Kod Yazıyorum.
               <br />
               <span className="text-[#00f0ff]">Sistem</span> İnşa
@@ -101,15 +100,15 @@ function Home() {
             </h1>
 
             {/* Açıklama */}
-            <p className="text-[#7a9ab8] text-lg leading-relaxed mb-10 max-w-lg">
+            <p className="text-[#7a9ab8] text-base md:text-lg leading-relaxed mb-10 max-w-lg">
               React'tan Spring Boot'a, C'den PostgreSQL'e — tam yığın çözümler üreten bir
               geliştirici. Fark yaratan yazılımlar inşa ediyorum.
             </p>
 
             {/* Butonlar */}
-            <div className="flex gap-4 mb-14">
-              <button className="font-mono text-xs font-bold bg-[#00f0ff] text-[#001a1f] px-8 py-4 flex items-center gap-2 hover:shadow-[0_0_30px_rgba(0,240,255,0.5)] transition-all">
-                PROJELERİ GÖR →
+            <div className="flex flex-wrap gap-4 mb-14">
+              <button className="font-mono text-xs font-bold bg-[#00f0ff] text-[#001a1f] px-8 py-4 hover:shadow-[0_0_30px_rgba(0,240,255,0.5)] transition-all">
+                PROJELERİ GÖR
               </button>
               <button className="font-mono text-xs font-bold border border-[#00f0ff]/30 text-[#00f0ff] px-8 py-4 hover:bg-[#00f0ff]/10 transition-all">
                 İLETİŞİME GEÇ
@@ -117,7 +116,7 @@ function Home() {
             </div>
 
             {/* Stat bar */}
-            <div className="flex gap-10 pt-6 border-t border-white/10">
+            <div className="flex flex-wrap gap-8 pt-6 border-t border-white/10">
               <div>
                 <div className="font-mono text-xs text-[#00f0ff] tracking-widest mb-2">DURUM</div>
                 <div className="font-mono text-sm text-[#d4e4fa] flex items-center gap-2">
@@ -140,7 +139,7 @@ function Home() {
             </div>
           </div>
 
-          {/* SAĞ KOLON */}
+          {/* SAĞ KOLON — Terminal */}
           <div className="flex items-center justify-center">
             <Terminal />
           </div>
