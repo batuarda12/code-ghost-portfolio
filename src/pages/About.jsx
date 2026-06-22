@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="relative min-h-screen bg-[#040d1a] pt-24 pb-20">
+    <div>
       <div
         className="fixed inset-0 pointer-events-none"
         style={{

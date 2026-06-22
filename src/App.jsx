@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -9,7 +10,7 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <BrowserRouter>
-      <div className="bg-[#040d1a] min-h-screen">
+      <Layout>
         <Navbar />
 
         <Routes>
@@ -20,7 +21,7 @@ function App() {
         </Routes>
 
         <Footer />
-      </div>
+      </Layout>
     </BrowserRouter>
   );
 }
