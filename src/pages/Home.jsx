@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import Terminal from '../components/Terminal';
+import { Link } from 'react-router-dom';
 
 function Home() {
   const canvasRef = useRef(null);
@@ -51,7 +52,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-[#040d1a]">
+    <div className="page-transition max-w-[1200px] mx-auto px-6 md:px-10 min-h-screen flex items-center pt-16">
       {/* Arkaplan grid */}
       <div
         className="fixed inset-0 pointer-events-none"
@@ -107,12 +108,18 @@ function Home() {
 
             {/* Butonlar */}
             <div className="flex flex-wrap gap-4 mb-14">
-              <button className="font-mono text-xs font-bold bg-[#00f0ff] text-[#001a1f] px-8 py-4 hover:shadow-[0_0_30px_rgba(0,240,255,0.5)] transition-all">
+              <Link
+                to="/projects"
+                className="font-mono text-xs font-bold bg-[#00f0ff] text-[#001a1f] px-8 py-4 hover:shadow-[0_0_30px_rgba(0,240,255,0.5)] transition-shadow duration-150"
+              >
                 PROJELERİ GÖR
-              </button>
-              <button className="font-mono text-xs font-bold border border-[#00f0ff]/30 text-[#00f0ff] px-8 py-4 hover:bg-[#00f0ff]/10 transition-all">
+              </Link>
+              <Link
+                to="/contact"
+                className="font-mono text-xs font-bold border border-[#00f0ff]/30 text-[#00f0ff] px-8 py-4 hover:bg-[#00f0ff]/10 transition-colors duration-150"
+              >
                 İLETİŞİME GEÇ
-              </button>
+              </Link>
             </div>
 
             {/* Stat bar */}

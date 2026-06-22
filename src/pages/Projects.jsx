@@ -37,7 +37,6 @@ function ProjeKarti({ proje }) {
     <div
       className={`bg-[#0a1628] border border-[#00f0ff]/10 p-8 hover:border-[#00f0ff]/40 transition-all group ${proje.buyuk ? 'md:col-span-2' : ''}`}
     >
-      {/* Üst kısım */}
       <div className="flex items-center justify-between mb-6">
         <span
           className={`font-mono text-xs px-3 py-1 ${
@@ -57,7 +56,6 @@ function ProjeKarti({ proje }) {
         </span>
       </div>
 
-      {/* Proje adı */}
       <h3
         className={`font-bold tracking-tight mb-4 group-hover:text-[#00f0ff] transition-colors ${
           proje.buyuk ? 'text-3xl' : 'text-xl'
@@ -66,10 +64,8 @@ function ProjeKarti({ proje }) {
         {proje.isim}
       </h3>
 
-      {/* Açıklama */}
       <p className="text-[#7a9ab8] text-sm leading-relaxed mb-6">{proje.aciklama}</p>
 
-      {/* Teknolojiler */}
       {proje.teknolojiler.length > 0 && (
         <div className="flex flex-wrap gap-2 mb-6">
           {proje.teknolojiler.map((t) => (
@@ -83,7 +79,6 @@ function ProjeKarti({ proje }) {
         </div>
       )}
 
-      {/* GitHub linki */}
       {proje.etiket === 'FEATURED' && (
         <a
           href={proje.github}
@@ -98,27 +93,14 @@ function ProjeKarti({ proje }) {
 
 function Projects() {
   return (
-    <div className="relative min-h-screen bg-[#040d1a] pt-24 pb-20">
-      {/* Arkaplan grid */}
-      <div
-        className="fixed inset-0 pointer-events-none"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(0,240,255,0.04) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(0,240,255,0.04) 1px, transparent 1px)
-          `,
-          backgroundSize: '40px 40px',
-        }}
-      />
-
-      <div className="relative z-10 max-w-[1200px] mx-auto px-10">
-        {/* Başlık */}
+    <div className="page-transition pt-24 pb-20">
+      <div className="max-w-[1200px] mx-auto px-6 md:px-10">
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-10 h-px bg-[#00f0ff]" />
             <span className="font-mono text-xs text-[#00f0ff] tracking-[0.2em]">PROJELER</span>
           </div>
-          <h1 className="text-5xl font-extrabold tracking-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
             Geliştirdiğim <span className="text-[#00f0ff]">Projeler</span>
           </h1>
           <p className="text-[#7a9ab8] text-lg max-w-xl">
@@ -127,8 +109,7 @@ function Projects() {
           </p>
         </div>
 
-        {/* Proje grid */}
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {PROJELER.map((proje) => (
             <ProjeKarti key={proje.id} proje={proje} />
           ))}

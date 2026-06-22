@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div>
+    <div className="page-transition pt-24 pb-20">
       <div
         className="fixed inset-0 pointer-events-none"
         style={{

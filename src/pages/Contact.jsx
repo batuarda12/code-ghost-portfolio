@@ -23,7 +23,7 @@ function Contact() {
   }
 
   return (
-    <div className="relative min-h-screen bg-[#040d1a] pt-24 pb-20">
+    <div className="page-transition pt-24 pb-20">
       {/* Arkaplan grid */}
       <div
         className="fixed inset-0 pointer-events-none"
@@ -57,7 +57,7 @@ function Contact() {
           <div className="space-y-6">
             {/* GitHub */}
             <a
-              href="#"
+              href="https://github.com/batuarda12"
               className="flex items-center gap-5 bg-[#0a1628] border border-[#00f0ff]/10 p-6 hover:border-[#00f0ff]/40 transition-all group"
             >
               <div className="w-12 h-12 bg-[#00f0ff]/10 flex items-center justify-center text-[#00f0ff] group-hover:bg-[#00f0ff]/20 transition-all">
@@ -71,7 +71,9 @@ function Contact() {
 
             {/* LinkedIn */}
             <a
-              href="#"
+              href="https://www.linkedin.com/in/batuhan-arda-unal"
+              target="_blank"
+              rel="noreferrer"
               className="flex items-center gap-5 bg-[#0a1628] border border-[#00f0ff]/10 p-6 hover:border-[#00f0ff]/40 transition-all group"
             >
               <div className="w-12 h-12 bg-[#00f0ff]/10 flex items-center justify-center text-[#00f0ff] group-hover:bg-[#00f0ff]/20 transition-all">
@@ -86,6 +88,8 @@ function Contact() {
             {/* Email */}
             <a
               href="mailto:mail@example.com"
+              target="_blank"
+              rel="noreferrer"
               className="flex items-center gap-5 bg-[#0a1628] border border-[#00f0ff]/10 p-6 hover:border-[#00f0ff]/40 transition-all group"
             >
               <div className="w-12 h-12 bg-[#00f0ff]/10 flex items-center justify-center text-[#00f0ff] group-hover:bg-[#00f0ff]/20 transition-all">
