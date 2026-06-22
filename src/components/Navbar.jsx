@@ -39,9 +39,14 @@ function Navbar() {
 
         {/* Sağ taraf */}
         <div className="flex items-center gap-4">
-          <button className="hidden md:block font-mono text-xs font-bold bg-[#00f0ff] text-[#001a1f] px-5 py-2 hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-all">
+          <a
+            href="/CV.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="hidden md:block font-mono text-xs font-bold bg-[#00f0ff] text-[#001a1f] px-5 py-2 hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-shadow duration-150"
+          >
             CV.PDF
-          </button>
+          </a>
 
           {/* Mobil hamburger butonu */}
           <button
@@ -76,9 +81,14 @@ function Navbar() {
               {link.label}
             </Link>
           ))}
-          <button className="font-mono text-xs font-bold bg-[#00f0ff] text-[#001a1f] px-5 py-2 w-full mt-2">
+          <a
+            href="/CV.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="font-mono text-xs font-bold bg-[#00f0ff] text-[#001a1f] px-5 py-2 w-full mt-2 block text-center"
+          >
             CV.PDF
-          </button>
+          </a>
         </div>
       )}
     </nav>
