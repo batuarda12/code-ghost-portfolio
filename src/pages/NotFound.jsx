@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 function NotFound() {
+  const { t } = useTranslation()
   return (
     <div className="page-transition min-h-screen flex items-center justify-center px-6">
       <div className="text-center">
@@ -14,12 +16,12 @@ function NotFound() {
 
         {/* Başlık */}
         <h1 className="text-2xl md:text-3xl font-bold mb-4">
-          Sayfa <span className="text-[#00f0ff]">Bulunamadı</span>
+          <span className="text-[#00f0ff]">{t('404.baslik')}</span>
         </h1>
 
         {/* Açıklama */}
         <p className="text-[#7a9ab8] font-mono text-sm mb-10 max-w-sm mx-auto">
-          Aradığın sayfa mevcut değil ya da taşınmış olabilir. Ana sayfaya dönebilirsin.
+          {t('404.aciklama')}
         </p>
 
         {/* Terminal mesajı */}
@@ -34,7 +36,7 @@ function NotFound() {
           to="/"
           className="font-mono text-xs font-bold bg-[#00f0ff] text-[#001a1f] px-8 py-4 hover:shadow-[0_0_30px_rgba(0,240,255,0.5)] transition-shadow duration-150"
         >
-          ANA SAYFAYA DÖN
+          {t('404.btn')}
         </Link>
       </div>
     </div>

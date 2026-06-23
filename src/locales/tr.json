@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "projects": "Projeler",
+    "contact": "İletişim"
+  },
+  "home": {
+    "etiket": "FULLSTACK DEVELOPER // v1.0",
+    "baslik1": "Kod Yazıyorum.",
+    "baslik2": "Sistem İnşa",
+    "baslik3": "Ediyorum.",
+    "aciklama": "React'tan Spring Boot'a, C'den PostgreSQL'e — tam yığın çözümler üreten bir geliştirici. Fark yaratan yazılımlar inşa ediyorum.",
+    "btn_projeler": "PROJELERİ GÖR",
+    "btn_iletisim": "İLETİŞİME GEÇ",
+    "durum": "DURUM",
+    "durum_val": "AKTİF",
+    "stack": "STACK",
+    "stack_val": "FULLSTACK",
+    "musaitlik": "MÜSAİTLİK",
+    "musaitlik_val": "FREELANCE_AÇIK"
+  },
+  "about": {
+    "etiket": "HAKKIMDA",
+    "baslik1": "Kod Yazan,",
+    "baslik2": "Sistem Kuran",
+    "baslik3": "Geliştirici.",
+    "bio1": "2 yıldır aktif olarak yazılım geliştiriyorum. Web'den mobil'e, IoT'den yapay zeka destekli uygulamalara kadar pek çok alanda proje ürettim.",
+    "bio2": "Daha önce SkyBook adlı bir web uygulaması geliştirip sattım. Android Studio ile Java kullanarak mobil uygulama geliştirdim. Yapay zekayı aktif olarak araştırma ve geliştirme süreçlerime entegre ediyorum.",
+    "bio3": "Kendimi özellikle backend alanında geliştirmek istiyorum. Bunun yanında bilgisayar ağları ve proje yönetimi konularında da aktif olarak ilerliyorum.",
+    "foto": "FOTOĞRAF YAKINDA",
+    "techbaslik": "Teknoloji Yığını",
+    "deneyimbaslik": "Deneyim & Eğitim",
+    "btn_projeler": "PROJELERİ GÖR",
+    "btn_iletisim": "İLETİŞİM",
+    "db_kategori": "VERİTABANI",
+    "diger_kategori": "DİĞER",
+    "exp1_baslik": "SkyBook — Web Uygulaması",
+    "exp1_aciklama": "Kendi geliştirdiğim SkyBook web uygulamasını başarıyla sattım. Fullstack bir proje olarak sıfırdan tasarlayıp piyasaya sürdüm.",
+    "exp2_baslik": "Mobil Uygulama Geliştirme",
+    "exp2_aciklama": "Android Studio ve Java kullanarak mobil uygulama geliştirdim. Native Android geliştirme süreçlerini öğrendim.",
+    "exp3_baslik": "IoT Uygulama Geliştirme",
+    "exp3_aciklama": "IoT Stack kullanarak donanım ve yazılımı birleştiren uygulamalar geliştirdim.",
+    "exp4_baslik": "Bilgisayar Mühendisliği Mezuniyeti",
+    "exp4_aciklama": "Bilgisayar Mühendisliği bölümünden mezun oldum. Şu an backend geliştirme, bilgisayar ağları ve proje yönetimi alanlarında kendimi geliştiriyorum.",
+    "exp4_tech2": "Bilgisayar Ağları",
+    "exp4_tech3": "Proje Yönetimi"
+  },
+  "projects": {
+    "etiket": "PROJELER",
+    "baslik": "Geliştirdiğim Projeler",
+    "aciklama": "Sıfırdan tasarlayıp hayata geçirdiğim projeler. Her biri farklı bir problemi çözmek için yazıldı.",
+    "github": "GitHub'da Gör",
+    "satildi": "SATILDI",
+    "wip": "WIP",
+    "yakinda": "YAKINDA",
+    "featured": "FEATURED",
+    "skybook_aciklama": "Sıfırdan tasarlayıp geliştirdiğim ve başarıyla sattığım fullstack web uygulaması. Kullanıcı yönetimi, rezervasyon sistemi ve ödeme entegrasyonu içeriyor.",
+    "yakinda_aciklama": "Yeni bir proje geliyor..."
+  },
+  "contact": {
+    "etiket": "İLETİŞİM",
+    "baslik1": "Yeni Bir",
+    "baslik2": "Proje Başlatalım.",
+    "aciklama": "Bir fikrin mi var? Birlikte çalışmak mı istiyorsun? Aşağıdan mesaj bırak, 24 saat içinde dönerim.",
+    "isim": "AD SOYAD",
+    "isim_placeholder": "Adın Soyadın",
+    "email": "E-POSTA",
+    "email_placeholder": "mail@example.com",
+    "mesaj": "MESAJ",
+    "mesaj_placeholder": "Projenizden bahsedin...",
+    "gonder": "MESAJ GÖNDER",
+    "durum": "SİSTEM DURUMU",
+    "durum_val": "AKTİF — YENİ PROJELERE AÇIK",
+    "basari": "Mesaj Gönderildi!",
+    "basari_aciklama": "En kısa sürede geri döneceğim.",
+    "yeni_mesaj": "YENİ MESAJ"
+  },
+  "footer": {
+    "rights": "© 2025 CODE_GHOST — TÜM HAKLARI SAKLIDIR"
+  },
+  "404": {
+    "baslik": "Sayfa Bulunamadı",
+    "aciklama": "Aradığın sayfa mevcut değil ya da taşınmış olabilir. Ana sayfaya dönebilirsin.",
+    "btn": "ANA SAYFAYA DÖN"
+  }
+}

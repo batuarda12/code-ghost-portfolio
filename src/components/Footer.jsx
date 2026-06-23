@@ -1,10 +1,13 @@
+import { useTranslation } from 'react-i18next'
+
 function Footer() {
+  const { t } = useTranslation()
   return (
     <footer className="border-t border-[#00f0ff]/10 py-8 mt-20">
       <div className="max-w-[1200px] mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-4">
         {/* Sol: Marka */}
         <div className="font-mono text-xs text-[#3a5a72] tracking-widest">
-          © 2025 CODE_GHOST — TÜM HAKLARI SAKLIDIR
+          {t('footer.rights')}
         </div>
 
         {/* Sağ: Linkler */}

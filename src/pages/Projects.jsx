@@ -1,10 +1,11 @@
+import { useTranslation } from 'react-i18next'
+
 const PROJELER = [
   {
     id: 1,
     isim: 'SkyBook',
     etiket: 'FEATURED',
-    aciklama:
-      'Sıfırdan tasarlayıp geliştirdiğim ve başarıyla sattığım fullstack web uygulaması. Kullanıcı yönetimi, rezervasyon sistemi ve ödeme entegrasyonu içeriyor.',
+    aciklamaKey: 'projects.skybook_aciklama',
     teknolojiler: ['React', 'Node.js', 'PostgreSQL', 'REST API'],
     github: '#',
     durum: 'SATILDI',
@@ -14,7 +15,7 @@ const PROJELER = [
     id: 2,
     isim: 'PROJE_02',
     etiket: 'YAKINDA',
-    aciklama: 'Yeni bir proje geliyor...',
+    aciklamaKey: 'projects.yakinda_aciklama',
     teknolojiler: [],
     github: '#',
     durum: 'WIP',
@@ -24,7 +25,7 @@ const PROJELER = [
     id: 3,
     isim: 'PROJE_03',
     etiket: 'YAKINDA',
-    aciklama: 'Yeni bir proje geliyor...',
+    aciklamaKey: 'projects.yakinda_aciklama',
     teknolojiler: [],
     github: '#',
     durum: 'WIP',
@@ -33,6 +34,7 @@ const PROJELER = [
 ];
 
 function ProjeKarti({ proje }) {
+  const { t } = useTranslation()
   return (
     <div
       className={`bg-[#0a1628] border border-[#00f0ff]/10 p-8 hover:border-[#00f0ff]/40 transition-all group ${proje.buyuk ? 'md:col-span-2' : ''}`}
@@ -45,14 +47,14 @@ function ProjeKarti({ proje }) {
               : 'bg-white/5 text-[#3a5a72] border border-white/10'
           }`}
         >
-          {proje.etiket}
+          {t('projects.' + proje.etiket.toLowerCase())}
         </span>
         <span
           className={`font-mono text-xs ${
             proje.durum === 'SATILDI' ? 'text-green-400' : 'text-[#3a5a72]'
           }`}
         >
-          {proje.durum}
+          {t('projects.' + proje.durum.toLowerCase())}
         </span>
       </div>
 
@@ -64,16 +66,16 @@ function ProjeKarti({ proje }) {
         {proje.isim}
       </h3>
 
-      <p className="text-[#7a9ab8] text-sm leading-relaxed mb-6">{proje.aciklama}</p>
+      <p className="text-[#7a9ab8] text-sm leading-relaxed mb-6">{t(proje.aciklamaKey)}</p>
 
       {proje.teknolojiler.length > 0 && (
         <div className="flex flex-wrap gap-2 mb-6">
-          {proje.teknolojiler.map((t) => (
+          {proje.teknolojiler.map((tech) => (
             <span
-              key={t}
+              key={tech}
               className="font-mono text-xs px-2 py-1 border border-[#00f0ff]/20 text-[#00f0ff]/60"
             >
-              {t}
+              {tech}
             </span>
           ))}
         </div>
@@ -84,7 +86,7 @@ function ProjeKarti({ proje }) {
           href={proje.github}
           className="inline-flex items-center gap-2 font-mono text-xs text-[#00f0ff] hover:gap-4 transition-all"
         >
-          GitHub&apos;da Gör
+          {t('projects.github')}
         </a>
       )}
     </div>
@@ -92,20 +94,20 @@ function ProjeKarti({ proje }) {
 }
 
 function Projects() {
+  const { t } = useTranslation()
   return (
     <div className="page-transition pt-24 pb-20">
       <div className="max-w-[1200px] mx-auto px-6 md:px-10">
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-10 h-px bg-[#00f0ff]" />
-            <span className="font-mono text-xs text-[#00f0ff] tracking-[0.2em]">PROJELER</span>
+            <span className="font-mono text-xs text-[#00f0ff] tracking-[0.2em]">{t('projects.etiket')}</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
-            Geliştirdiğim <span className="text-[#00f0ff]">Projeler</span>
+            <span className="text-[#00f0ff]">{t('projects.baslik')}</span>
           </h1>
           <p className="text-[#7a9ab8] text-lg max-w-xl">
-            Sıfırdan tasarlayıp hayata geçirdiğim projeler. Her biri farklı bir problemi çözmek için
-            yazıldı.
+            {t('projects.aciklama')}
           </p>
         </div>
 

@@ -1,9 +1,11 @@
 import { useEffect, useRef } from 'react';
 import Terminal from '../components/Terminal';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 function Home() {
   const canvasRef = useRef(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -87,23 +89,22 @@ function Home() {
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-px bg-[#00f0ff]" />
               <span className="font-mono text-xs text-[#00f0ff] tracking-[0.2em]">
-                FULLSTACK DEVELOPER // v1.0
+                {t('home.etiket')}
               </span>
             </div>
 
             {/* Ana başlık */}
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-6">
-              Kod Yazıyorum.
+              {t('home.baslik1')}
               <br />
-              <span className="text-[#00f0ff]">Sistem</span> İnşa
+              <span className="text-[#00f0ff]">{t('home.baslik2')}</span>
               <br />
-              Ediyorum.
+              {t('home.baslik3')}
             </h1>
 
             {/* Açıklama */}
             <p className="text-[#7a9ab8] text-base md:text-lg leading-relaxed mb-10 max-w-lg">
-              React'tan Spring Boot'a, C'den PostgreSQL'e — tam yığın çözümler üreten bir
-              geliştirici. Fark yaratan yazılımlar inşa ediyorum.
+              {t('home.aciklama')}
             </p>
 
             {/* Butonlar */}
@@ -112,36 +113,36 @@ function Home() {
                 to="/projects"
                 className="font-mono text-xs font-bold bg-[#00f0ff] text-[#001a1f] px-8 py-4 hover:shadow-[0_0_30px_rgba(0,240,255,0.5)] transition-shadow duration-150"
               >
-                PROJELERİ GÖR
+                {t('home.btn_projeler')}
               </Link>
               <Link
                 to="/contact"
                 className="font-mono text-xs font-bold border border-[#00f0ff]/30 text-[#00f0ff] px-8 py-4 hover:bg-[#00f0ff]/10 transition-colors duration-150"
               >
-                İLETİŞİME GEÇ
+                {t('home.btn_iletisim')}
               </Link>
             </div>
 
             {/* Stat bar */}
             <div className="flex flex-wrap gap-8 pt-6 border-t border-white/10">
               <div>
-                <div className="font-mono text-xs text-[#00f0ff] tracking-widest mb-2">DURUM</div>
+                <div className="font-mono text-xs text-[#00f0ff] tracking-widest mb-2">{t('home.durum')}</div>
                 <div className="font-mono text-sm text-[#d4e4fa] flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                  AKTİF
+                  {t('home.durum_val')}
                 </div>
               </div>
 
               <div>
-                <div className="font-mono text-xs text-[#00f0ff] tracking-widest mb-2">STACK</div>
-                <div className="font-mono text-sm text-[#d4e4fa]">FULLSTACK</div>
+                <div className="font-mono text-xs text-[#00f0ff] tracking-widest mb-2">{t('home.stack')}</div>
+                <div className="font-mono text-sm text-[#d4e4fa]">{t('home.stack_val')}</div>
               </div>
 
               <div>
                 <div className="font-mono text-xs text-[#00f0ff] tracking-widest mb-2">
-                  MÜSAİTLİK
+                  {t('home.musaitlik')}
                 </div>
-                <div className="font-mono text-sm text-[#d4e4fa]">FREELANCE_AÇIK</div>
+                <div className="font-mono text-sm text-[#d4e4fa]">{t('home.musaitlik_val')}</div>
               </div>
             </div>
           </div>

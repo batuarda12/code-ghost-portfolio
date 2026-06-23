@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "etiket": "FULLSTACK DEVELOPER // v1.0",
+    "baslik1": "I Write Code.",
+    "baslik2": "I Build",
+    "baslik3": "Systems.",
+    "aciklama": "From React to Spring Boot, from C to PostgreSQL — a developer producing full-stack solutions. Building software that makes a difference.",
+    "btn_projeler": "VIEW PROJECTS",
+    "btn_iletisim": "CONTACT ME",
+    "durum": "STATUS",
+    "durum_val": "ACTIVE",
+    "stack": "STACK",
+    "stack_val": "FULLSTACK",
+    "musaitlik": "AVAILABILITY",
+    "musaitlik_val": "FREELANCE_OPEN"
+  },
+  "about": {
+    "etiket": "ABOUT ME",
+    "baslik1": "A Developer",
+    "baslik2": "Who Codes &",
+    "baslik3": "Builds Systems.",
+    "bio1": "I've been actively developing software for 2 years. I've built projects in many fields, from web to mobile, from IoT to AI-powered applications.",
+    "bio2": "I previously developed and sold a web application called SkyBook. I developed mobile applications using Android Studio and Java. I actively integrate AI into my research and development processes.",
+    "bio3": "I want to specialize in backend development. I'm also actively improving myself in computer networks and project management.",
+    "foto": "PHOTO COMING SOON",
+    "techbaslik": "Tech Stack",
+    "deneyimbaslik": "Experience & Education",
+    "btn_projeler": "VIEW PROJECTS",
+    "btn_iletisim": "CONTACT",
+    "db_kategori": "DATABASE",
+    "diger_kategori": "OTHER",
+    "exp1_baslik": "SkyBook — Web Application",
+    "exp1_aciklama": "Successfully sold SkyBook, a web application I built from scratch. Designed and launched it as a fullstack project from the ground up.",
+    "exp2_baslik": "Mobile Application Development",
+    "exp2_aciklama": "Developed mobile applications using Android Studio and Java. Learned native Android development processes.",
+    "exp3_baslik": "IoT Application Development",
+    "exp3_aciklama": "Built applications combining hardware and software using IoT Stack.",
+    "exp4_baslik": "Computer Engineering Graduation",
+    "exp4_aciklama": "Graduated from Computer Engineering. Currently improving myself in backend development, computer networks, and project management.",
+    "exp4_tech2": "Computer Networks",
+    "exp4_tech3": "Project Management"
+  },
+  "projects": {
+    "etiket": "PROJECTS",
+    "baslik": "My Projects",
+    "aciklama": "Projects I've designed and built from scratch. Each one was written to solve a different problem.",
+    "github": "View on GitHub",
+    "satildi": "SOLD",
+    "wip": "WIP",
+    "yakinda": "COMING SOON",
+    "featured": "FEATURED",
+    "skybook_aciklama": "A fullstack web application I designed and built from scratch, then successfully sold. Includes user management, reservation system, and payment integration.",
+    "yakinda_aciklama": "A new project is coming..."
+  },
+  "contact": {
+    "etiket": "CONTACT",
+    "baslik1": "Let's Start",
+    "baslik2": "A New Project.",
+    "aciklama": "Have an idea? Want to work together? Leave a message below, I'll get back to you within 24 hours.",
+    "isim": "FULL NAME",
+    "isim_placeholder": "Your Name",
+    "email": "EMAIL",
+    "email_placeholder": "mail@example.com",
+    "mesaj": "MESSAGE",
+    "mesaj_placeholder": "Tell me about your project...",
+    "gonder": "SEND MESSAGE",
+    "durum": "SYSTEM STATUS",
+    "durum_val": "ACTIVE — OPEN TO NEW PROJECTS",
+    "basari": "Message Sent!",
+    "basari_aciklama": "I'll get back to you as soon as possible.",
+    "yeni_mesaj": "NEW MESSAGE"
+  },
+  "footer": {
+    "rights": "© 2025 CODE_GHOST — ALL RIGHTS RESERVED"
+  },
+  "404": {
+    "baslik": "Page Not Found",
+    "aciklama": "The page you're looking for doesn't exist or may have moved. You can return to the home page.",
+    "btn": "BACK TO HOME"
+  }
+}
